@@ -4,7 +4,7 @@
     List Banco de Horas
 <br>
     {% for registro_he in object_list %}
-        <a href="{% url 'update_hora_extra' registro_he.id %}">
+        <a href="{% url 'update_hora_extra_base' registro_he.id %}">
             {{ registro_he }}
         </a>
         <a href="{% url 'delete_hora_extra' registro_he.id %}">
@@ -17,4 +17,6 @@
     {% endif %}
 
     <a href="{% url 'create_hora_extra' %}" class="btn btn-info"> Novo </a>
+    <a href="{% url 'exportar_csv' %}" class="btn btn-info"> Exportar CSV </a>
+    <a href="{% url 'exportar_excel' %}" class="btn btn-info"> Exportar EXCEL </a>
 {% endblock %}
