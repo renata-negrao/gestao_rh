@@ -6,7 +6,6 @@ __pycache__
 gesta_rh/__pychache__/
 rhpnegrao.pem
 media
-static
 uwsgi.ini
 uwsgi_params
 *.bak
